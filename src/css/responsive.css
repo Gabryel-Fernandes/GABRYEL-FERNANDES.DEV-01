@@ -3,11 +3,11 @@
 @media(max-width:400px) {
 
     .start-portifolio{
-        background: linear-gradient(#050007, transparent, #050007), url('../image/backgorund-mobile.png');
+        background: linear-gradient(), url('../image/backgorund-mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height: calc(100vh - 110px)
+        height: 100svh
     }
 
     .navbar{
