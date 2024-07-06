@@ -3,18 +3,32 @@
 @media(max-width:400px) {
 
     .start-portifolio{
-        background: linear-gradient(180deg, transparent, #050007) 10%, url('../image/backgorund-mobile.png');
+        background: linear-gradient(#050007, transparent, #050007), url('../image/backgorund-mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 60vh;
+        background-position: center;
+        height: calc(100vh - 110px)
     }
 
-    .navbar {
+    .navbar{
+        background-color: transparent;
+        justify-content: flex-end;
+    }
+
+    .social-icons{
         display: none;
     }
 
+    .parts-grup{
+        display: none;
+    }
+
+    .container-hamburger{
+        display: block
+    }
+
     .icon-title{
-        margin: 100px 0px 0px 0px;
+        margin: 10px 0px 0px 0px;
         align-items: center;
     }
     .title{
@@ -103,6 +117,7 @@
         background-color: #050007;
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
     }
     
     .title-footer{
