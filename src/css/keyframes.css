@@ -1,0 +1,15 @@
+@keyframes animStar {
+    from {
+        transform: translateY(px);
+    }
+
+    to {
+        transform: translateY(-2000px);
+    }
+}
+
+@keyframes infiniteScroll {
+    to {
+        translate: calc(-50% - 5px);
+    }
+}
