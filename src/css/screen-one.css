@@ -1,0 +1,156 @@
+
+
+.header {
+    background-color: var(--BlackColor-gradientes);
+    height: 12vh;
+    width: 100vw;
+    position: fixed;
+}
+
+.navigation {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburguer {
+    background-color: var(--pinkColor-button);
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    display: none;
+}
+
+.stick {
+    height: 3px;
+    width: 30px;
+    background-color: var(--white-color);
+    margin: 3px;
+    border-radius: 2px;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.redes img {
+    width: 50px;
+    margin: 15px;
+}
+
+.redes img:hover {
+    box-shadow: 0px 0px 30px var(--pinkColor-title);
+    border-radius: 50%;
+    text-shadow: 0px 0px 20px var(--pinkColor-title);
+    transition: 0.3s ease-in-out
+}
+
+.sections {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 45px 15px 15px;
+}
+
+.sections li {
+    color: aliceblue;
+    font-family: 'Ruda', sans-serif;
+    font-size: 24px;
+}
+
+.sections a:hover {
+    text-shadow: 0px 0px 10px var(--pinkColor-title);
+    transition: 0.3s ease-in-out
+}
+
+.screen-one {
+    background: linear-gradient(#050007, transparent, #050007), url('../image/backgorund-min.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(110vh - 12vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.union-title {
+    display: flex;
+    align-items: center;
+    margin: 150px 500px 0px 0px;
+}
+
+.union-title img {
+    width: 150px;
+    height: 110px;
+    margin: 0px 0px 10px 10px;
+}
+
+.union-title h1 {
+    font-size: 120px;
+    font-family: 'Rubik mono one', sans-serif;
+    background: linear-gradient(45deg, #ffffff, #A700A1);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title-two {
+    font-size: 120px;
+    font-family: 'Rubik mono one', sans-serif;
+    color: var(--white-color);
+}
+
+.title-container{
+    margin: 0px 0px 0px 400px;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 550px;
+    height: 90px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(-45deg, #00ae1a, #64ff53, #00ae1a);
+    margin-top: 80px;
+    cursor: pointer;
+    
+}
+
+.active-arrow{
+    animation: downarrow 0.6s infinite alternate ease-in-out;
+}
+
+.button-elements{
+    pointer-events: none;
+}
+
+.contact:hover{
+    box-shadow: 0px 0px 5px var(--GrennColor-Two);
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(-45deg, #64ff53, #00ae1a, #64ff53);
+    margin-top: 80px;
+}
+
+
+.contact h1 {
+    font-size: 55px;
+    color: var(--white-color);
+    font-family: 'Ruda', sans-serif;
+}
+
+.contact img{
+    width: 140px;
+}
+

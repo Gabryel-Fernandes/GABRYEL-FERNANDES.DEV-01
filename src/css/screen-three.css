@@ -1,0 +1,72 @@
+.screen-three{
+    height: 100vh;
+    background:  linear-gradient(#050007, transparent, #050007), url('../image/backgorund-min.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center;
+}
+
+.title-last {
+    background: linear-gradient(95deg, #ffffff, #A700A1);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Rubik mono one', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px 100px 100px 100px;
+    padding: 100px 0px 0px 0px;
+}
+
+.magic-cards{
+    margin: 100px 220px 200px 220px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.magic-cards img{
+    width: 180px;
+    height: auto;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #050007;
+  
+}
+
+.footer-itens{
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #050007;
+    padding: 20px 20px 20px 20px;
+}
+
+.footer img{
+    width: 90px;
+    
+}
+
+.copyhight{
+    color: #fff;
+    font-family: 'satoshi', sans-serif;
+    font-size: 30px;
+}
+
+.return{
+    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+}
+
+.return img{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}

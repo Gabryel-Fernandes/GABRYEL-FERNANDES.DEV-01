@@ -4,65 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
+    <title>Meu Portifólio</title>
 
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="stylesheet" href="./src/css/keyframes.css">
-    <link rel="stylesheet" href="./src/css/variables.css">
-    <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="shortcut icon" href="./src/image/code-icon.png" type="image/x-icon">
 
+    <link rel="stylesheet" href="./src/css/reset.css" type="">
+    <link rel="stylesheet" href="./src/css/variables.css" type="">
+    <link rel="stylesheet" href="./src/css/screen-one.css" type="">
+    <link rel="stylesheet" href="./src/css/screen-two.css" type="">
+    <link rel="stylesheet" href="./src/css/screen-three.css" type="">
+    <link rel="stylesheet" href="./src/css/keyframes.css" type="">
+    <link rel="stylesheet" href="./src/css/responsivo-mobile.css" type="">
+    <link rel="stylesheet" href="./src/css/responsivo-tablet.css" type="">
 </head>
 
 <body>
-    <main class="body">
-        <nav class="navbar">
-            <ul class="social-icons">
-                <li class="redes">
-                    <a href="https://github.com/Gabryel-Fernandes" target="_blank">
-                        <img id="back-top" src="./src/image/github-icon.png" alt="logo do gitHub branco">
-                    </a>
-                </li>
-                <li class="redes">
-                    <a href="https://www.linkedin.com/in/gabryel-fernandes/" target="_blank">
-                        <img src="./src/image/linkedin-icon.png" alt="logo do linkedin branco">
-                    </a>
-                </li>
-                <li class="redes">
-                    <a href="https://drive.google.com/file/d/1xj7R034DCac-eF9kRBWU9Nh4kC0fyIXa/view" target="_blank">
-                        <img src="./src/image/cv-icon.png" alt="simbolo de um curriculo">
-                    </a>
-                </li>
-            </ul>
+    <header id="back-top" class="header">
 
-            <ul class="parts-grup">
-                <li class="parts"><a href="#Projects">Projects</a></li>
-                <li class="parts"><a href="#my-profile">About</a></li>
-                <li class="parts"><a href="#footer">Skills</a></li>
-            </ul>
-            <div class="container-hamburger">
-                <button class="hamburger">
-            </div>
-
+        <nav class="navigation">
+            <button class="hamburguer">
+                <div class="stick"></div>
+                <div class="stick"></div>
+                <div class="stick"></div>
             </button>
+
+            <ul class="social-links">
+                <li class="redes">
+                    <a href="https://github.com/Gabryel-Fernandes" target="_blank"><img
+                            src="./src/image/github-icon.png" alt="github icon"></a>
+                </li>
+                <li class="redes">
+                    <a href="https://www.linkedin.com/in/gabryel-fernandes/" target="_blank"><img
+                            src="./src/image/linkedin-icon.png" alt="linkedin icon"></a>
+                </li>
+                <li class="redes">
+                    <a href="https://drive.google.com/file/d/1xj7R034DCac-eF9kRBWU9Nh4kC0fyIXa/view"
+                        target="_blank"><img src="./src/image/cv-icon.png" alt="cv icon"></a>
+                </li>
+            </ul>
+
+            <ul class="sections">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#my-profile">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
         </nav>
+    </header>
 
-        <section class="start-portifolio">
-            <div class="icon-title">
-                <h1 class="title gradiente">Gabryel</h1>
-                <img src="./src/image/code-icon.png" alt="um simbolo verde que simboliza codigo ">
+    <main class="content">
+        <section class="screen-one">
+            <div class="union-title">
+                <h1 class="title-one">Gabryel</h1>
+                <img src="./src/image/code-icon.png" alt="">
             </div>
 
-            <h1 class="title-secondary">Fernandes</h1>
-
-
-            <div class="button">
-                <a class="talk" href="#">Let's talk</a>
-                <img src="./src/image/setas-icon.png" alt="imagem de seta branca">
+            <div class="title-container">
+                <h1 class="title-two">Fernandes</h1>
             </div>
+
+            <button class="contact">
+                <h1 class="button-elements">Let's Talk</h1>
+                <img class="arrow button-elements" src="./src/image/setas-icon.png" alt="">
+            </button>
         </section>
 
-        <section id="Projects" class="mid-portifolio">
+        <section id="projects" class="screen-two">
 
             <div class="wrapper">
                 <div id="stars"></div>
@@ -73,8 +79,8 @@
             <div class="top-elements">
                 <h1 class="title-projects">My Projects</h1>
 
-                <div class="cards-bar">
-                    <div class="slider">
+                <div class="slider-bar">
+                    <div class="slider-itens">
                         <img src="./src/image/git-icon.png" alt="">
 
                         <img src="./src/image/html-icon.png" alt="">
@@ -98,8 +104,8 @@
                 </div>
             </div>
 
-            <div class="screns">
-                <div class="scren one">
+            <div class="continer-projects">
+                <div class="screen one">
                     <img src="./src/image/laptop-icon.png" alt="">
                     <div class="features">
                         <img src="./src/image/html-icon.png" alt="">
@@ -107,7 +113,8 @@
                         <img src="./src/image/js-icon.png" alt="">
                     </div>
                 </div>
-                <div class="scren two">
+
+                <div class="screen two">
                     <img src="./src/image/laptop-icon.png" alt="">
                     <div class="features">
                         <img src="./src/image/html-icon.png" alt="">
@@ -118,10 +125,12 @@
             </div>
         </section>
 
-        <section id="footer" class="portifolio-last">
-            <h1 class="title-footer">Let me show you a little more
-                about myself and my skills
-            </h1>
+        <section id="skills" class="screen-three">
+            <div class="title-last">
+                <h1>Let me show you a little more
+                    about myself and my skills
+                </h1>
+            </div>
 
             <div class="magic-cards">
                 <img src="./src/image/card-icon.png" alt="">
@@ -132,8 +141,10 @@
                 <img src="./src/image/card-icon.png" alt="">
             </div>
         </section>
+    </main>
 
-        <footer class="footer">
+    <footer class="footer">
+        <div class="footer-itens">
             <a href="#back-top">
                 <button class="return">
                     <img src="./src/image/return-seta.png" alt="seta up">
@@ -143,8 +154,9 @@
             <h3 class="copyhight">&copy;Gabryel Fernandes</h3>
 
             <img src="./src/image/email-icon.png" alt="">
-        </footer>
-    </main>
+        </div>
+    </footer>
+
     <script src="./src/scripts/index.js"></script>
 </body>
 
