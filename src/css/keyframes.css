@@ -16,5 +16,5 @@
 
 @keyframes downarrow{
     0% {-webkit-transform: translatex(0);}
-    100%{-webkit-transform: translatex(0.4em)}
+    100%{-webkit-transform: translatex(0.8em)}
 }

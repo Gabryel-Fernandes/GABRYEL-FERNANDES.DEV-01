@@ -1,3 +1,5 @@
+/*-----------scren one-----------*/
+
 @media(max-width: 400px){
 
     .header{
@@ -11,12 +13,30 @@
         position: absolute;
         width: 60vw;
         height: 55vh;
-        background-color: var(--Backgorund-navbar);
         margin: 15px;
         border-radius: 15px;
-        background: transparent;
+        clip-path: circle(100px at 10% -10%);
+        transition: 0.5s ease-in-out;
+        background-color: transparent;
+    }
+    
+    .active-nav{
+        clip-path: circle(1500px at 90% -30%);
+        pointer-events: all;
+        background-color: var(--Backgorund-navbar);
+    }
+    
+    .hamburguer{
+        display: block;
+        display: flex;
+        margin: 15px;
     }
 
+    .background-hamburguer-active{
+        transition: 0.5s ease-out;
+        background-color: transparent;
+    }
+    
     .social-links{
         margin: 15px 7px;
         opacity: 0;
@@ -31,17 +51,6 @@
         margin: 15px;
         align-items: flex-start;
         opacity: 0;
-    }
-
-    .nav-list{
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    .hamburguer{
-        display: block;
-        display: flex;
-        margin: 15px;
     }
 
     .union-title{
@@ -79,3 +88,5 @@
         width: 100px
     }
 }
+
+/*----------Scren two----------*/

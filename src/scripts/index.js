@@ -22,3 +22,26 @@ excuteButton.addEventListener('mouseenter', () =>{
 excuteButton.addEventListener('mouseout', () =>{
     moveArrow.classList.remove('active-arrow')
 })
+
+/*----------Funcionamento deo bottão da nav-----------*/
+
+const buttonHamburguerNav = document.querySelector('.hamburguer');
+const navigationbar = document.querySelector('.navigation')
+const iconsSocials = document.querySelector('.social-links')
+const iconsSections = document.querySelector('.sections')
+
+buttonHamburguerNav.addEventListener('click', () =>{
+    activeIconsNav();
+    removeOpacity();
+})
+
+function activeIconsNav() {
+    navigationbar.classList.toggle('active-nav');
+    buttonHamburguerNav.classList.toggle('background-hamburguer-active');
+}
+
+function removeOpacity(){
+    iconsSocials.style.opacity = '100%';
+    iconsSections.style.opacity = '100%';
+    
+}
