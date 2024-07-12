@@ -1,0 +1,121 @@
+/* -----------scren one-----------*/
+
+@media(min-width: 800px) {
+
+    .header {
+        height: 15vh;
+        background-color: var(--BlackColor-gradientes);
+    }
+
+    .navigation {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .background-hamburguer-active {
+        transition: 0.5s ease-out;
+        background-color: transparent;
+    }
+
+    .union-title {
+        margin: 0px 160px 0px 0px;
+    }
+
+    .union-title h1 {
+        font-size: 80px;
+    }
+
+    .union-title img {
+        width: 90px;
+        height: 65px;
+        margin: 0px 0px 5px 5px;
+    }
+
+    .title-container {
+        margin: 0px 0px 0px 120px;
+    }
+
+    .title-two {
+        font-size: 80px
+    }
+
+    .contact {
+        width: 530px;
+        height: 100px;
+    }
+
+    .contact h1 {
+        font-size: 50px;
+    }
+
+    .contact img {
+        width: 130px
+    }
+}
+
+/*----------Scren two----------*/
+
+@media(min-width: 400px) and  (max-width: 800px){
+    .screen-two {
+        width: 100%;
+        height: 100%;
+    }
+
+    .top-elements {
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+    }
+
+    .title-projects {
+        font-size: 35px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .slider-bar {
+        margin: 0;
+        width: 340px;
+    }
+
+
+    .continer-projects {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0px 0px 30px 0px;
+    }
+
+    .screen {
+        align-items: space-between;
+        width: 350px;
+    }
+}
+
+/*--------screen three-------*/
+
+@media(min-width: 400px) and  (max-width: 800px){
+    .screen-three{
+        height: 100%;
+    }
+
+    .title-last{
+        font-size: 20px;
+        margin: 0px 10px 30px 10px;
+        padding: 30px 0px 0px 0px;
+    }
+    
+    .magic-cards{
+        flex-wrap: wrap;
+        margin: 0px;
+        justify-content: space-around;
+        padding: 20px 100px;
+    }
+    
+    .magic-cards img{
+        width: 140px;
+        margin: 10px;
+    }
+}

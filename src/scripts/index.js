@@ -7,7 +7,6 @@ elementsdaughters.forEach((item) => {
     let duplicateElement = item.cloneNode(true);
 
     elementSlider.appendChild(duplicateElement);
-    console.log(item);
 })
 
 /*----------funcionamento da flecha button-----------*/
