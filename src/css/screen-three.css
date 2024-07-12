@@ -34,7 +34,6 @@
     align-items: center;
     justify-content: center;
     background-color: #050007;
-  
 }
 
 .footer-itens{
@@ -43,12 +42,12 @@
     align-items: center;
     justify-content: space-around;
     background-color: #050007;
-    padding: 20px 20px 20px 20px;
+    margin: 0px 20px 20px 20px;
 }
 
 .footer img{
     width: 90px;
-    
+    cursor: pointer;
 }
 
 .copyhight{
@@ -63,6 +62,11 @@
     height: 60px;
     border: none;
     cursor: pointer;
+}
+
+.return:hover{
+    filter: drop-shadow(0px 0px 15px #ffffff7e);
+    transition: 0.3s ease-in-out;
 }
 
 .return img{
