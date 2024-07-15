@@ -17,56 +17,59 @@
 
 .hamburguer {
     background-color: var(--pinkColor-button);
-    height: 40px;
-    width: 40px;
-    border-radius: 8px;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border: none;
     display: none;
+    transform-origin: center;
 }
 
+
+
 .stick {
-    height: 3px;
-    width: 30px;
+    height: .3rem;
+    width: 3rem;
     background-color: var(--white-color);
-    margin: 3px;
-    border-radius: 2px;
+    margin: .3rem;
+    border-radius: .2rem;
 }
 
 .social-links {
     display: flex;
     align-items: center;
-    margin-left: 15px;
+    margin-left: 1.5rem;
 }
 
 .redes img {
-    width: 50px;
-    margin: 15px;
+    width: 5rem;
+    margin: 1.5rem;
 }
 
 .redes img:hover {
-    filter: drop-shadow(0px 0px 20px var(--pinkColor-title)) ;
+    filter: drop-shadow(0rem 0rem 2rem var(--pinkColor-title)) ;
     transition: 0.3s ease-in-out
 }
 
 .sections {
     display: flex;
     align-items: center;
-    gap: 30px;
-    margin: 20px 45px 15px 15px;
+    gap: 3rem;
+    margin: 2rem 4.5rem 1.5rem 1.5rem;
 }
 
 .sections li {
     color: aliceblue;
     font-family: 'Ruda', sans-serif;
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 .sections a:hover {
-    text-shadow: 0px 0px 10px var(--pinkColor-title);
+    text-shadow: 1rem 1rem 1rem var(--pinkColor-title);
     transition: 0.3s ease-in-out
 }
 
@@ -85,17 +88,17 @@
 .union-title {
     display: flex;
     align-items: center;
-    margin: 150px 500px 0px 0px;
+    margin: 15rem 50rem 0rem 0rem;
 }
 
 .union-title img {
-    width: 150px;
-    height: 110px;
-    margin: 0px 0px 10px 10px;
+    width: 15rem;
+    height: 10rem;
+    margin: 0rem 0rem 1rem 1rem;
 }
 
 .union-title h1 {
-    font-size: 120px;
+    font-size: 12rem;
     font-family: 'Rubik mono one', sans-serif;
     background: linear-gradient(45deg, #ffffff, #A700A1);
     background-clip: text;
@@ -103,28 +106,15 @@
 }
 
 .title-two {
-    font-size: 120px;
+    font-size: 12rem;
     font-family: 'Rubik mono one', sans-serif;
     color: var(--white-color);
 }
 
 .title-container{
-    margin: 0px 0px 0px 400px;
+    margin: 0rem 0rem 0rem 40rem;
 }
 
-.contact{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 550px;
-    height: 90px;
-    border-radius: 50px;
-    border: none;
-    background: linear-gradient(-45deg, #00ae1a, #64ff53, #00ae1a);
-    margin-top: 80px;
-    cursor: pointer;
-    
-}
 
 .active-arrow{
     animation: downarrow 0.6s infinite alternate ease-in-out;
@@ -134,21 +124,43 @@
     pointer-events: none;
 }
 
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 55rem;
+    height: 9rem;
+    border-radius: 5rem;
+    border: none;
+    background: linear-gradient(-45deg, #00ae1a, #64ff53, #00ae1a);
+    margin-top: 8rem;
+    cursor: pointer;
+    
+}
+
 .contact:hover{
-    box-shadow: 0px 0px 5px var(--GrennColor-Two);
+    box-shadow: 0rem 0rem .5rem var(--GrennColor-Two);
     transition: 0.3s ease-in-out;
     background: linear-gradient(-45deg, #64ff53, #00ae1a, #64ff53);
-    margin-top: 80px;
+    margin-top: 8rem;
 }
 
 
 .contact h1 {
-    font-size: 55px;
+    font-size: 5.5rem;
     color: var(--white-color);
     font-family: 'Ruda', sans-serif;
 }
 
 .contact img{
-    width: 140px;
+    width: 14rem;
 }
+
+.contact a{
+    position: absolute;
+    width: 55rem;
+    height: 9rem;
+}
+
+
 
