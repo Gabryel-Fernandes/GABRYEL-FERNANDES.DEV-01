@@ -1,6 +1,6 @@
 /*-----------scren one-----------*/
 
-@media(max-width: 400px) {
+@media(max-width: 40rem) {
 
     .header {
         background-color: transparent;
@@ -13,15 +13,15 @@
         position: absolute;
         width: 60vw;
         height: 55vh;
-        margin: 15px;
+        margin: 1.5rem;
         border-radius: 15px;
-        clip-path: circle(100px at 10% -10%);
+        clip-path: circle(10rem at 10% -10%);
         transition: 0.5s ease-in-out;
         background-color: transparent;
     }
 
     .active-nav {
-        clip-path: circle(1500px at 90% -30%);
+        clip-path: circle(150rem at 90% -30%);
         pointer-events: all;
         background-color: var(--Backgorund-navbar);
     }
@@ -29,7 +29,7 @@
     .hamburguer {
         display: block;
         display: flex;
-        margin: 15px;
+        margin: 1.5rem;
     }
 
     .background-hamburguer-active {
@@ -38,17 +38,17 @@
     }
 
     .social-links {
-        margin: 15px 7px;
+        margin: 1.5rem .7rem;
         opacity: 0;
     }
 
     .redes img {
-        margin: 10px;
+        margin: 1rem;
     }
 
     .sections {
         flex-direction: column;
-        margin: 15px;
+        margin: .5rem;
         align-items: flex-start;
         opacity: 0;
     }
@@ -58,13 +58,13 @@
     }
 
     .union-title h1 {
-        font-size: 45px;
+        font-size: 4.5rem;
     }
 
     .union-title img {
-        width: 50px;
-        height: 35px;
-        margin: 0px 0px 5px 5px;
+        width: 5rem;
+        height: 3.5rem;
+        margin: 0rem 0rem .5rem .5rem;
     }
 
     .title-container {
@@ -72,26 +72,26 @@
     }
 
     .title-two {
-        font-size: 42px
+        font-size: 4.2rem;
     }
 
     .contact {
-        width: 330px;
-        height: 70px;
+        width: 33rem;
+        height: 7rem;
     }
 
     .contact h1 {
-        font-size: 35px;
+        font-size: 3.5rem;
     }
 
     .contact img {
-        width: 100px
+        width: 10rem
     }
 }
 
 /*----------Scren two----------*/
 
-@media(max-width: 400px) {
+@media(max-width: 40rem) {
     .screen-two {
         width: 100%;
         height: 100%;
@@ -100,17 +100,17 @@
     .top-elements {
         display: flex;
         flex-direction: column;
-        padding: 30px 0px 0px 0px;
+        padding: 3rem 0rem 0rem 0rem;
     }
 
     .title-projects {
-        font-size: 35px;
-        margin: 0px 0px 30px 0px;
+        font-size: 3.5rem;
+        margin: 0rem 0rem 3rem 0rem;
     }
 
     .slider-bar {
         margin: 0;
-        width: 340px;
+        width: 34rem;
         mask: none;
     }
 
@@ -123,17 +123,17 @@
 
     .screen {
         align-items: space-between;
-        width: 350px;
+        width: 35rem;
     }
 
     .two {
-        margin: 0px 0px 30px 0px;
+        margin: 0rem 0rem 3rem 0rem;
     }
 }
 
 /*--------screen three--------*/
 
-@media(max-width: 400px) {
+@media(max-width: 40rem) {
 
     .screen-three {
         height: 100%;
@@ -141,48 +141,48 @@
 
     .title-last {
         font-size: 20px;
-        margin: 0px 10px 30px 10px;
-        padding: 30px 0px 0px 0px;
+        margin: 0px 1rem 3rem 1rem;
+        padding: 3rem 0rem 0rem 0rem;
     }
 
     .magic-cards {
         flex-wrap: wrap;
-        margin: 0px;
+        margin: 0rem;
         justify-content: space-around;
-        padding: 20px;
+        padding: 2rem;
     }
 
-    .magic-cards img {
-        width: 140px;
-        margin: 10px;
+    .magic-card {
+        width: 14rem;
+        margin: 1rem;
     }
 }
 
 /*----------Scren footer----------*/
 
 
-@media(max-width: 400px) {
+@media(max-width: 40rem) {
     .footer {
         height: 10vh;
     }
 
     .copyhight {
-        font-size: 20px;
+        font-size: 2rem;
     }
 
     .return {
-        width: 40px;
-        height: 40px;
-        border-radius: 10px;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 1rem;
     }
 
     .footer-itens img {
-        width: 60px;
+        width: 6rem;
     }
 
     .return img {
-        width: 20px;
-        height: 15px;
-        padding: 0px;
+        width: 2rem;
+        height: 1.5rem;
+        padding: 0rem;
     }
 }

@@ -1,6 +1,6 @@
 /* -----------scren one-----------*/
 
-@media(min-width: 400px) and  (max-width: 800px){
+@media(min-width: 40rem) and  (max-width: 80rem){
 
     .header {
         height: 15vh;
@@ -21,44 +21,44 @@
     }
 
     .union-title {
-        margin: 0px 160px 0px 0px;
+        margin: 0rem 16rem 0rem 0rem;
     }
 
     .union-title h1 {
-        font-size: 80px;
+        font-size: 8rem;
     }
 
     .union-title img {
-        width: 90px;
-        height: 65px;
-        margin: 0px 0px 5px 5px;
+        width: 9rem;
+        height: 6.5rem;
+        margin: 0rem 0rem .5rem .5rem;
     }
 
     .title-container {
-        margin: 0px 0px 0px 120px;
+        margin: 0rem 0rem 0rem 12rem;
     }
 
     .title-two {
-        font-size: 80px
+        font-size: 8rem;
     }
 
     .contact {
-        width: 530px;
-        height: 100px;
+        width: 53rem;
+        height: 10rem;
     }
 
     .contact h1 {
-        font-size: 50px;
+        font-size: 5rem;
     }
 
     .contact img {
-        width: 130px
+        width: 13rem;
     }
 }
 
 /*----------Scren two----------*/
 
-@media(min-width: 400px) and  (max-width: 800px){
+@media(min-width: 40rem) and  (max-width: 80rem){
     .screen-two {
         width: 100%;
         height: 100%;
@@ -67,17 +67,17 @@
     .top-elements {
         display: flex;
         flex-direction: row;
-        padding: 30px;
+        padding: 3rem;
     }
 
     .title-projects {
-        font-size: 35px;
-        margin: 0px 0px 0px 0px;
+        font-size: 3.5rem;
+        margin: 0rem;
     }
 
     .slider-bar {
         margin: 0;
-        width: 340px;
+        width: 34rem;
     }
 
 
@@ -85,37 +85,37 @@
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        margin: 0px 0px 30px 0px;
+        margin: 0rem 0rem 3rem 0rem;
     }
 
     .screen {
         align-items: space-between;
-        width: 350px;
+        width: 35rem;
     }
 }
 
 /*--------screen three-------*/
 
-@media(min-width: 400px) and  (max-width: 800px){
+@media(min-width: 40rem) and  (max-width: 80rem){
     .screen-three{
         height: 100%;
     }
 
     .title-last{
-        font-size: 20px;
-        margin: 0px 10px 30px 10px;
-        padding: 30px 0px 0px 0px;
+        font-size: 2rem;
+        margin: 0rem 1rem 3rem 1rem;
+        padding: 3rem 0rem 0rem 0rem;
     }
     
     .magic-cards{
         flex-wrap: wrap;
-        margin: 0px;
+        margin: 0rem;
         justify-content: space-around;
-        padding: 20px 100px;
+        padding: 2rem 10rem;
     }
     
-    .magic-cards img{
-        width: 140px;
-        margin: 10px;
+    .magic-card{
+        width: 14rem;
+        margin: 1rem;
     }
 }

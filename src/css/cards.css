@@ -1,0 +1,98 @@
+/*----------My profile----------*/
+
+.modal-cards {
+    position: absolute;
+    z-index: 5;
+    width: 54rem;
+    height: 42rem;
+    display: flex;
+    background-color: #10101C;
+    justify-content: space-around;
+    align-items: space-around;
+    border-radius: 2rem;
+    box-shadow: .5rem .5rem 2rem black;
+    flex-direction: column;
+    /* display: none; */
+}
+
+.personal-info{
+    display: flex;
+    justify-content: space-around;
+    margin: .5rem 0rem;
+}
+
+.photo{
+    
+    width: 23.5rem;
+    height: 23.5rem;
+    border-radius: 1rem;
+    border: 2px solid var(--white-color);
+    overflow: hidden;
+}
+
+.photo img{
+    height: 100%;
+    width: 100%;
+}
+
+.about{
+    width: 25rem;
+    font-size: 1.4rem;
+    font-family: 'Ruda', sans-serif;
+    color: var(--white-color);
+    text-align: justify;
+}
+
+.info{
+    display:flex;
+    font-family: 'Ruda', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.for-me{
+    margin: 0rem 1.5rem;
+}
+
+.years{
+    color: var(--white-color);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.education{
+    color: var(--white-color);
+    font-size: 2rem;
+    margin: 1rem 0rem
+}
+
+.education strong{
+    color: #1a90ff;
+}
+
+.contact-me img{
+    width: 3rem;
+}
+
+.contact-me{
+    display: flex;
+    justify-content: space-between;
+}
+
+.talk-me{
+    background: linear-gradient(-45deg, #00ae1a, #64ff53, #00ae1a);
+    border: none;
+    width: 25rem;
+    height: 8rem;
+    border-radius: 50px;
+    margin: 1.5rem;
+    font-size: 4rem;
+    font-family: 'Ruda', sans-serif;
+    font-weight: 800;
+}
+
+.talk-me:hover{
+    box-shadow: 0rem 0rem .5rem var(--GrennColor-Two);
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(-45deg, #64ff53, #00ae1a, #64ff53)
+}

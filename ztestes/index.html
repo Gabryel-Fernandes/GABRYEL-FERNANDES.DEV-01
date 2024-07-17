@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartas e Modal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card" onclick="openModal()">
+        <div class="card-content">
+            A
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&</span>
+            <div class="modal-card">
+                <p>VOCÊ DESCOBRIU UM ÁS!</p>
+                <p>Aproveite e vamos trabalhar juntos.</p>
+                <button onclick="closeModal()">Vamos conversar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
