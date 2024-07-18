@@ -119,3 +119,72 @@
         margin: 1rem;
     }
 }
+
+/*---------cards features-------*/
+
+@media(min-width: 40rem) and  (max-width: 80rem){
+
+    .magic-cards .container-modal {
+        height: 100vh;
+        position: absolute;
+        bottom: -123rem;
+    }
+
+
+    .magic-cards .modal-html {
+        width: 35rem;
+        bottom: -85rem;
+    }
+
+    .modal-html .close-modal {
+        bottom: 38rem;
+        left: 16rem;
+    }
+
+    .modal-card .close-profile {
+        bottom: 38rem;
+        left: -2rem;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .magic-cards .modal-css {
+        width: 35rem;
+        bottom: -85rem;
+    }
+
+    .modal-css .close-modal {
+        bottom: 38rem;
+        left: 16rem;
+    }
+
+    .magic-cards .modal-js {
+        width: 35rem;
+        bottom: -85rem;
+    }
+
+    .modal-js .close-modal {
+        bottom: 38rem;
+        left: 16rem;
+    }
+
+    .magic-cards .modal-git {
+        width: 35rem;
+        bottom: -85rem;
+    }
+
+    .modal-git .close-modal {
+        bottom: 38rem;
+        left: 16rem;
+    }
+
+    .magic-cards .modal-design {
+        width: 35rem;
+        bottom: -85rem;
+    }
+
+    .modal-design .close-modal {
+        bottom: 38rem;
+        left: 16rem;
+    }
+}

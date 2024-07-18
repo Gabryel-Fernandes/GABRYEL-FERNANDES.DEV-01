@@ -21,7 +21,7 @@
     margin: 10rem 16rem 20rem 16rem;
     display: flex;
     justify-content: center;
-    
+    align-items: center;
 }
 
 .magic-card{

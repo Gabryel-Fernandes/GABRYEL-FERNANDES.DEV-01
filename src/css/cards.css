@@ -1,8 +1,112 @@
-/*----------My profile----------*/
+/*----------funcionamento do modal----------*/
 
-.modal-cards {
+.all-content {
+    /* overflow: hidden; */
+}
+
+.container-modal {
+    background-color: rgba(5, 2, 15, 0.941);
+    height: 102%;
+    width: 100%;
     position: absolute;
-    z-index: 5;
+    z-index: 998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+
+/*-------buttom close cards-------*/
+
+.close-modal{
+    position: relative;
+    z-index: 999;
+    width: 7rem;
+    height: 7rem;
+    bottom: 38rem;
+    left: 18rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--pinkColor-title);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-modal:hover{
+    filter: drop-shadow( 0rem 0rem 1rem var(--pinkColor-title));
+}
+
+.stick-one{
+    width: 5rem;
+    height: 1rem;
+    background-color: var(--white-color);
+    border-radius: .5rem;
+    transform: rotate(45deg);
+}
+.stick-two{
+    width: 5rem;
+    height: 1rem;
+    background-color: var(--white-color);
+    border-radius: .5rem;
+    transform: rotate(-45deg);
+    position: absolute;
+}
+
+
+/*---------html-card----------*/
+
+.modal-html {
+    position: absolute;
+    z-index: 999;
+    width: 38rem;
+    height: 45rem;
+    background-color: #10101C;
+    border-radius: 2rem;
+    box-shadow: .5rem .5rem 2rem black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    display: none;
+}
+
+.container-structs{
+    width: 29rem;
+    height: 20rem;
+}
+
+.modal-html img{
+    width: 15rem;
+}
+
+.modal-html img:hover{
+    filter: drop-shadow( 0rem 0rem 1rem #ff4400);
+    transition: .3s ease-out;
+}
+
+.modal-html p{
+    font-family: 'Ruda', sans-serif;
+    color: var(--white-color);
+    text-align: justify;
+    font-size: 2.1rem;
+    margin: 4rem 0rem 0rem 0rem;
+}
+
+.close-profile{
+    position: absolute;
+    bottom: 37rem;
+    left: -3rem;
+    border-radius: 50%;
+}
+
+/*----------My profile card----------*/
+
+.modal-card {
+    position: absolute;
+    z-index: 999;
     width: 54rem;
     height: 42rem;
     display: flex;
@@ -15,14 +119,14 @@
     display: none;
 }
 
-.personal-info{
+.personal-info {
     display: flex;
     justify-content: space-around;
     margin: .5rem 0rem;
 }
 
-.photo{
-    
+.photo {
+
     width: 23.5rem;
     height: 23.5rem;
     border-radius: 1rem;
@@ -30,12 +134,12 @@
     overflow: hidden;
 }
 
-.photo img{
+.photo img {
     height: 100%;
     width: 100%;
 }
 
-.about{
+.about {
     width: 25rem;
     font-size: 1.4rem;
     font-family: 'Ruda', sans-serif;
@@ -43,43 +147,48 @@
     text-align: justify;
 }
 
-.info{
-    display:flex;
+.info {
+    display: flex;
     font-family: 'Ruda', sans-serif;
     justify-content: space-between;
     align-items: center;
 }
 
-.for-me{
+.for-me {
     margin: 0rem 1.5rem;
 }
 
-.years{
+.years {
     color: var(--white-color);
     font-size: 3rem;
     font-weight: 700;
 }
 
-.education{
+.education {
     color: var(--white-color);
     font-size: 2rem;
     margin: 1rem 0rem
 }
 
-.education strong{
+.education strong {
     color: #1a90ff;
 }
 
-.contact-me img{
+.contact-me img {
     width: 3rem;
 }
 
-.contact-me{
+.contact-me img:hover{
+    filter: drop-shadow(0rem 0rem .5rem var(--white-color));
+    transition: .3s ease-in-out;
+}
+
+.contact-me {
     display: flex;
     justify-content: space-between;
 }
 
-.talk-me{
+.talk-me {
     background: linear-gradient(-45deg, #00ae1a, #64ff53, #00ae1a);
     border: none;
     width: 25rem;
@@ -89,10 +198,182 @@
     font-size: 4rem;
     font-family: 'Ruda', sans-serif;
     font-weight: 800;
+    display: flex;
 }
 
-.talk-me:hover{
+.talk-me a{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 25rem;
+    height: 8rem;
+}
+
+.talk-me:hover {
     box-shadow: 0rem 0rem .5rem var(--GrennColor-Two);
     transition: 0.3s ease-in-out;
     background: linear-gradient(-45deg, #64ff53, #00ae1a, #64ff53)
 }
+
+
+/*---------css card----------*/
+
+.modal-css {
+    position: absolute;
+    z-index: 999;
+    width: 38rem;
+    height: 45rem;
+    background-color: #10101C;
+    border-radius: 2rem;
+    box-shadow: .5rem .5rem 2rem black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    display: none;
+}
+
+.container-structs{
+    width: 29rem;
+    height: 20rem;
+}
+
+.modal-css img{
+    width: 15rem;
+}
+
+.modal-css img:hover{
+    filter: drop-shadow( 0rem 0rem 1rem #00b3ff);
+    transition: .3s ease-out;
+}
+
+.modal-css p{
+    font-family: 'Ruda', sans-serif;
+    color: var(--white-color);
+    text-align: justify;
+    font-size: 2.1rem;
+    margin: 4rem 0rem 0rem 0rem;
+}
+
+/*----------JS card----------*/
+
+.modal-js {
+    position: absolute;
+    z-index: 999;
+    width: 38rem;
+    height: 45rem;
+    background-color: #10101C;
+    border-radius: 2rem;
+    box-shadow: .5rem .5rem 2rem black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    display: none;
+}
+
+.container-structs{
+    width: 29rem;
+    height: 20rem;
+}
+
+.modal-js img{
+    width: 15rem;
+}
+
+.modal-js img:hover{
+    filter: drop-shadow( 0rem 0rem 1rem #fffb00);
+    transition: .3s ease-out;
+}
+
+.modal-js p{
+    font-family: 'Ruda', sans-serif;
+    color: var(--white-color);
+    text-align: justify;
+    font-size: 2.1rem;
+    margin: 4rem 0rem 0rem 0rem;
+}
+
+/*---------Git card---------*/
+
+
+.modal-git {
+    position: absolute;
+    z-index: 999;
+    width: 38rem;
+    height: 45rem;
+    background-color: #10101C;
+    border-radius: 2rem;
+    box-shadow: .5rem .5rem 2rem black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 1rem 2rem 1rem;
+    display: none;
+}
+
+.container-structs{
+    width: 29rem;
+    height: 20rem;
+}
+
+.modal-git img{
+    width: 15rem;
+}
+
+.modal-git img:hover{
+    filter: drop-shadow( 0rem 0rem 1rem #ff0000);
+    transition: .3s ease-out;
+}
+
+.modal-git p{
+    font-family: 'Ruda', sans-serif;
+    color: var(--white-color);
+    text-align: justify;
+    font-size: 2.1rem;
+    margin: 4rem 0rem 0rem 0rem;
+}
+
+/*------------Disings card------------*/
+
+.modal-design {
+    position: absolute;
+    z-index: 999;
+    width: 38rem;
+    height: 45rem;
+    background-color: #10101C;
+    border-radius: 2rem;
+    box-shadow: .5rem .5rem 2rem black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 1rem 2rem 1rem;
+    display: none;
+}
+
+.container-structs{
+    width: 29rem;
+    height: 20rem;
+}
+
+.modal-design img{
+    width: 15rem;
+}
+
+.modal-design img:hover{
+    filter: drop-shadow( 0rem 0rem 1rem #00ffc8);
+    transition: .3s ease-out;
+}
+
+.modal-design p{
+    font-family: 'Ruda', sans-serif;
+    color: var(--white-color);
+    text-align: justify;
+    font-size: 2.1rem;
+    margin: 4rem 0rem 0rem 0rem;
+}
+
