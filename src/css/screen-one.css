@@ -3,7 +3,7 @@
 .header {
     background-color: var(--BlackColor-gradientes);
     height: 12vh;
-    width: 100%;
+    width: 90vw;
     position: fixed;
 }
 

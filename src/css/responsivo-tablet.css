@@ -1,6 +1,6 @@
 /* -----------scren one-----------*/
 
-@media(min-width: 40rem) and  (max-width: 80rem){
+@media(min-width: 40rem) and  (max-width: 70rem){
 
     .header {
         height: 15vh;
@@ -58,7 +58,7 @@
 
 /*----------Scren two----------*/
 
-@media(min-width: 40rem) and  (max-width: 80rem){
+@media(min-width: 40rem) and  (max-width: 70rem){
     .screen-two {
         width: 100%;
         height: 100%;
@@ -96,7 +96,7 @@
 
 /*--------screen three-------*/
 
-@media(min-width: 40rem) and  (max-width: 80rem){
+@media(min-width: 40rem) and  (max-width: 70rem){
     .screen-three{
         height: 100%;
     }
@@ -122,7 +122,7 @@
 
 /*---------cards features-------*/
 
-@media(min-width: 40rem) and  (max-width: 80rem){
+@media(min-width: 40rem) and  (max-width: 70rem){
 
     .magic-cards .container-modal {
         height: 100vh;

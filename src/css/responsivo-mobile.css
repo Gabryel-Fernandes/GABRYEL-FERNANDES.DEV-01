@@ -79,6 +79,9 @@
         width: 33rem;
         height: 7rem;
     }
+    .contact a{
+        width: 300px;
+    }
 
     .contact h1 {
         font-size: 3.5rem;
