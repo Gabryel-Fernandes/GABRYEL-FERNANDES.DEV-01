@@ -208,10 +208,10 @@
 
     .container-modal .modal-card {
         width: 35rem;
-        height: 70rem;
+        height: 69rem;
         align-items: center;
-        left: 6rem;
-        bottom: 10rem;
+        left: 3rem;
+        bottom: 1rem;
     }
 
     .modal-card .personal-info {
@@ -256,7 +256,7 @@
     }
 
     .modal-card .close-profile {
-        bottom: 66rem;
+        bottom: 64rem;
         left: -2rem;
         width: 6rem;
         height: 6rem;
