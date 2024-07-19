@@ -18,3 +18,13 @@
     0% {-webkit-transform: translatex(0);}
     100%{-webkit-transform: translatex(0.8em)}
 }
+
+@keyframes emerge{
+    0%{-webkit-transform: scale(0%)}
+    100%{-webkit-transform: scale(100%)}
+}
+
+@keyframes pulse{
+    0% {-webkit-transform: opacity(0%)}
+    100%{-webkit-transform: opacity(100%)}
+}

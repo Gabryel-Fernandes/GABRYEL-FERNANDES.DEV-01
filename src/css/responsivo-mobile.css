@@ -191,6 +191,11 @@
 
 @media(max-width: 40rem) {
 
+    .magic-cards .container-modal {
+        height: 122vh;
+        position: absolute;
+        bottom: -182rem;
+    }
 
     .magic-cards .modal-html {
         width: 35rem;
@@ -205,6 +210,8 @@
         width: 35rem;
         height: 70rem;
         align-items: center;
+        left: 6rem;
+        bottom: 10rem;
     }
 
     .modal-card .personal-info {

@@ -130,6 +130,11 @@
         bottom: -123rem;
     }
 
+    .container-modal .modal-card {
+        left: 14rem;
+        bottom: 40rem;
+    }
+
 
     .magic-cards .modal-html {
         width: 35rem;
