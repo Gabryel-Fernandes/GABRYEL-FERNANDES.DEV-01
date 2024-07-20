@@ -6,7 +6,7 @@
 
 .container-modal {
     background-color: rgba(5, 2, 15, 0.941);
-    height: 102%;
+    height: 120vh;
     width: 100%;
     position: absolute;
     z-index: 998;
@@ -14,6 +14,7 @@
     align-items: center;
     justify-content: center;
     display: none;
+    bottom: -162rem;
 }
 
 
@@ -21,12 +22,12 @@
 
 
 .close-modal {
-    position: relative;
+    position: absolute;
     z-index: 999;
     width: 7rem;
     height: 7rem;
-    bottom: 38rem;
-    left: 18rem;
+    bottom: 46rem;
+    left: 30rem;
     border-radius: 50%;
     border: none;
     background-color: var(--pinkColor-title);
@@ -59,31 +60,26 @@
 
 
 /*---------html-card----------*/
-
 .modal-html {
+    width: 35rem;
+    height: 51rem;
+    background-color: #10101C;
     position: absolute;
     z-index: 999;
-    width: 38rem;
-    height: 45rem;
-    background-color: #10101C;
-    border-radius: 2rem;
-    box-shadow: .5rem .5rem 2rem black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 1rem;
-    display: none;
+    border-radius: 2rem;
+    box-shadow: 0rem 0rem 2rem #10101C;
+    padding: 2rem;
     animation: emerge .5s ease-in-out;
-}
-
-.container-structs {
-    width: 29rem;
-    height: 20rem;
+    display: none;
 }
 
 .modal-html img {
     width: 15rem;
+    margin: 2rem;
 }
 
 .modal-html img:hover {
@@ -91,19 +87,17 @@
     transition: .3s ease-out;
 }
 
-.modal-html p {
+.modal-html .container-structs {
+    width: 30rem;
+    height: 27rem;
+    overflow: hidden;
+}
+
+.container-structs .instructions {
     font-family: 'Ruda', sans-serif;
     color: var(--white-color);
     text-align: justify;
     font-size: 2.1rem;
-    margin: 4rem 0rem 0rem 0rem;
-}
-
-.close-profile {
-    position: absolute;
-    bottom: 37rem;
-    left: -3rem;
-    border-radius: 50%;
 }
 
 /*----------My profile card----------*/
@@ -111,16 +105,17 @@
 .modal-card {
     position: absolute;
     z-index: 999;
-    width: 54rem;
-    height: 42rem;
+    width: 56rem;
+    height: 46rem;
     display: flex;
     background-color: #10101C;
-    left: 50rem;
-    bottom: 15rem;
     border-radius: 2rem;
     box-shadow: .5rem .5rem 2rem black;
     flex-direction: column;
     display: none;
+    animation: emerge .5s ease-in-out;
+    align-items: space-around;
+    justify-content: space-around;
     animation: emerge .5s ease-in-out;
 }
 
@@ -220,33 +215,35 @@
     background: linear-gradient(-45deg, #64ff53, #00ae1a, #64ff53)
 }
 
+.close-profile {
+    position: absolute;
+    bottom: 40rem;
+    left: -3rem;
+    border-radius: 50%;
+}
 
 /*---------css card----------*/
 
 .modal-css {
+    width: 35rem;
+    height: 51rem;
+    background-color: #10101C;
     position: absolute;
     z-index: 999;
-    width: 38rem;
-    height: 45rem;
-    background-color: #10101C;
-    border-radius: 2rem;
-    box-shadow: .5rem .5rem 2rem black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 1rem;
-    display: none;
+    border-radius: 2rem;
+    box-shadow: 0rem 0rem 2rem #10101C;
+    padding: 2rem;
     animation: emerge .5s ease-in-out;
-}
-
-.container-structs {
-    width: 29rem;
-    height: 20rem;
+    display: none;
 }
 
 .modal-css img {
     width: 15rem;
+    margin: 2rem;
 }
 
 .modal-css img:hover {
@@ -254,82 +251,82 @@
     transition: .3s ease-out;
 }
 
-.modal-css p {
+.modal-css .container-structs {
+    width: 30rem;
+    height: 27rem;
+    overflow: hidden;
+}
+
+.container-structs .instructions {
     font-family: 'Ruda', sans-serif;
     color: var(--white-color);
     text-align: justify;
     font-size: 2.1rem;
-    margin: 4rem 0rem 0rem 0rem;
 }
 
 /*----------JS card----------*/
 
 .modal-js {
+    width: 35rem;
+    height: 51rem;
+    background-color: #10101C;
     position: absolute;
     z-index: 999;
-    width: 38rem;
-    height: 45rem;
-    background-color: #10101C;
-    border-radius: 2rem;
-    box-shadow: .5rem .5rem 2rem black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 1rem;
-    display: none;
+    border-radius: 2rem;
+    box-shadow: 0rem 0rem 2rem #10101C;
+    padding: 2rem;
     animation: emerge .5s ease-in-out;
-}
-
-.container-structs {
-    width: 29rem;
-    height: 20rem;
+    display: none;
 }
 
 .modal-js img {
     width: 15rem;
+    margin: 2rem;
 }
 
 .modal-js img:hover {
-    filter: drop-shadow(0rem 0rem 1rem #fffb00);
+    filter: drop-shadow(0rem 0rem 1rem #ffea00);
     transition: .3s ease-out;
 }
 
-.modal-js p {
+.modal-js .container-structs {
+    width: 30rem;
+    height: 27rem;
+    overflow: hidden;
+}
+
+.container-structs .instructions {
     font-family: 'Ruda', sans-serif;
     color: var(--white-color);
     text-align: justify;
     font-size: 2.1rem;
-    margin: 4rem 0rem 0rem 0rem;
 }
 
 /*---------Git card---------*/
-
-
 .modal-git {
+    width: 35rem;
+    height: 51rem;
+    background-color: #10101C;
     position: absolute;
     z-index: 999;
-    width: 38rem;
-    height: 45rem;
-    background-color: #10101C;
-    border-radius: 2rem;
-    box-shadow: .5rem .5rem 2rem black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 1rem 1rem 2rem 1rem;
-    display: none;
+    border-radius: 2rem;
+    box-shadow: 0rem 0rem 2rem #10101C;
+    padding: 2rem;
     animation: emerge .5s ease-in-out;
-}
-
-.container-structs {
-    width: 29rem;
-    height: 20rem;
+    display: none;
 }
 
 .modal-git img {
     width: 15rem;
+    margin: 2rem;
 }
 
 .modal-git img:hover {
@@ -337,51 +334,57 @@
     transition: .3s ease-out;
 }
 
-.modal-git p {
+.modal-git .container-structs {
+    width: 30rem;
+    height: 27rem;
+    overflow: hidden;
+}
+
+.container-structs .instructions {
     font-family: 'Ruda', sans-serif;
     color: var(--white-color);
     text-align: justify;
     font-size: 2.1rem;
-    margin: 4rem 0rem 0rem 0rem;
 }
 
 /*------------Disings card------------*/
 
 .modal-design {
+    width: 35rem;
+    height: 51rem;
+    background-color: #10101C;
     position: absolute;
     z-index: 999;
-    width: 38rem;
-    height: 45rem;
-    background-color: #10101C;
-    border-radius: 2rem;
-    box-shadow: .5rem .5rem 2rem black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 1rem 1rem 2rem 1rem;
-    display: none;
+    border-radius: 2rem;
+    box-shadow: 0rem 0rem 2rem #10101C;
+    padding: 2rem;
     animation: emerge .5s ease-in-out;
-}
-
-.container-structs {
-    width: 29rem;
-    height: 20rem;
+    display: none;
 }
 
 .modal-design img {
     width: 15rem;
+    margin: 2rem;
 }
 
 .modal-design img:hover {
-    filter: drop-shadow(0rem 0rem 1rem #00ffc8);
+    filter: drop-shadow(0rem 0rem 1rem #00ffcc);
     transition: .3s ease-out;
 }
 
-.modal-design p {
+.modal-design .container-structs {
+    width: 30rem;
+    height: 27rem;
+    overflow: hidden;
+}
+
+.container-structs .instructions {
     font-family: 'Ruda', sans-serif;
     color: var(--white-color);
     text-align: justify;
     font-size: 2.1rem;
-    margin: 4rem 0rem 0rem 0rem;
 }

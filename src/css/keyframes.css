@@ -23,8 +23,3 @@
     0%{-webkit-transform: scale(0%)}
     100%{-webkit-transform: scale(100%)}
 }
-
-@keyframes pulse{
-    0% {-webkit-transform: opacity(0%)}
-    100%{-webkit-transform: opacity(100%)}
-}

@@ -1,6 +1,6 @@
-/*-----------scren one-----------*/
+/*---------------------------------------------------scren one---------------------------------------------------*/
 
-@media(max-width: 620px) {
+@media(max-width: 720px) {
 
     .header {
         background-color: transparent;
@@ -79,7 +79,8 @@
         width: 33rem;
         height: 7rem;
     }
-    .contact a{
+
+    .contact a {
         width: 300px;
     }
 
@@ -92,9 +93,9 @@
     }
 }
 
-/*----------Scren two----------*/
+/*----------------------------------------------------Scren two---------------------------------------------------*/
 
-@media(max-width: 620px) {
+@media(max-width: 720px) {
     .screen-two {
         width: 100%;
         height: 100%;
@@ -134,9 +135,9 @@
     }
 }
 
-/*--------screen three--------*/
+/*------------------------------------------------------screen three--------------------------------------------*/
 
-@media(max-width: 620px) {
+@media(max-width: 720px) {
 
     .screen-three {
         height: 100%;
@@ -161,10 +162,10 @@
     }
 }
 
-/*----------Scren footer----------*/
+/*-------------------------------------------Scren footer------------------------------------------------------*/
 
 
-@media(max-width: 620px) {
+@media(max-width: 720px) {
     .footer {
         height: 10vh;
     }
@@ -190,116 +191,141 @@
     }
 }
 
-/*---------cards features-------*/
+/*-----------------------------------------cards features------------------------------------------------------*/
 
-@media(max-width: 620px) {
-    @media(max-width: 40rem) {
+@media(max-width: 720px) {
 
-        .magic-cards .container-modal {
-            height: 122vh;
-            position: absolute;
-            bottom: -182rem;
-        }
-    
-        .magic-cards .modal-html {
-            width: 35rem;
-        }
-    
-        .modal-html .close-modal {
-            bottom: 38rem;
-            left: 16rem;
-        }
-    
-        .container-modal .modal-card {
-            width: 35rem;
-            height: 69rem;
-            align-items: center;
-            left: 3rem;
-            bottom: 1rem;
-        }
-    
-        .modal-card .personal-info {
-            align-items: center;
-            flex-direction: column;
-            margin: 1rem 1rem 0rem 1rem;
-        }
-    
-        .modal-card .photo {
-            margin: 0rem 1rem 0rem 1rem;
-        }
-    
-        .modal-card .about {
-            width: 29rem;
-            margin: 1rem 1rem 0rem 1rem;
-            font-size: 1.6rem;
-        }
-    
-        .info {
-            flex-direction: column
-        }
-    
-        .info .for-me h1 {
-            display: none;
-        }
-    
-        .info .for-me p {
-            display: none;
-        }
-    
-        .info .contact-me img {
-            margin: 1rem;
-            width: 4rem;
-        }
-    
-        .info .talk-me{
-            height: 6rem;
-        }
-    
-        .info .talk-me a{
-            height: 6rem;
-        }
-    
-        .modal-card .close-profile {
-            bottom: 64rem;
-            left: -2rem;
-            width: 6rem;
-            height: 6rem;
-        }
-    
-        .magic-cards .modal-css {
-            width: 35rem;
-        }
-    
-        .modal-css .close-modal {
-            bottom: 38rem;
-            left: 16rem;
-        }
-    
-        .magic-cards .modal-js {
-            width: 35rem;
-        }
-    
-        .modal-js .close-modal {
-            bottom: 38rem;
-            left: 16rem;
-        }
-    
-        .magic-cards .modal-git {
-            width: 35rem;
-        }
-    
-        .modal-git .close-modal {
-            bottom: 38rem;
-            left: 16rem;
-        }
-    
-        .magic-cards .modal-design {
-            width: 35rem;
-        }
-    
-        .modal-design .close-modal {
-            bottom: 38rem;
-            left: 16rem;
-        }
+    /*------container general------*/
+
+    .magic-cards .container-modal {
+        height: 110vh;
+        position: absolute;
+        bottom: -202rem;
+    }
+
+    /*------close modal cards---------*/
+
+    .magic-cards .close-modal{
+        left: 25rem;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    /*------modal do html------*/
+
+    .magic-cards .modal-html {
+        width: 30rem;
+    }
+
+    .magic-cards .modal-html .container-structs{
+        width: 25rem;
+        height: 24rem;
+    }
+
+    .magic-cards .container-structs .instructions{
+        font-size: 1.8rem;
+    }
+    /*-----modal de perfil-------*/
+
+    .magic-cards .modal-card {
+        width: 30rem;
+        height: 55em;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-card .personal-info {
+        align-items: center;
+        flex-direction: column;
+        margin: 1rem 1rem 0rem 1rem;
+    }
+
+    .modal-card .photo {
+        width: 15rem;
+        height: 15rem;
+        margin: 0rem 1rem 0rem 1rem;
+    }
+
+    .modal-card .about {
+        width: 27rem;
+        margin: 2rem 0rem 0rem 0rem;
+        font-size: 1.4rem;
+    }
+
+    .info {
+        flex-direction: column
+    }
+
+    .info .for-me h1 {
+        display: none;
+    }
+
+    .info .for-me p {
+        display: none;
+    }
+
+    .info .contact-me img {
+        margin: 1rem;
+        width: 4rem;
+    }
+
+    .info .talk-me {
+        height: 6rem;
+        margin: .5rem;
+    }
+
+    .info .talk-me a {
+        height: 6rem;
+    }
+
+    .modal-card .close-profile {
+        bottom: 51rem;
+        left: -2rem;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    /*---------modal css-----------*/
+
+    .magic-cards .modal-css {
+        width: 30rem;
+    }
+
+    .magic-cards .modal-css .container-structs{
+        width: 25rem;
+        height: 24rem;
+    }
+
+    /*--------modal js---------*/
+
+    .magic-cards .modal-js {
+        width: 30rem;
+    }
+
+    .magic-cards .modal-js .container-structs{
+        width: 25rem;
+        height: 24rem;
+    }
+
+    /*---------modal git-----------*/
+
+    .magic-cards .modal-git {
+        width: 30rem;
+    }
+
+    .magic-cards .modal-git .container-structs{
+        width: 25rem;
+        height: 24rem;
+    }
+
+    /*-------modal desigen-------*/
+
+    .magic-cards .modal-design {
+        width: 30rem;
+    }
+
+    .magic-cards .modal-design .container-structs{
+        width: 25rem;
+        height: 24rem;
     }
 }

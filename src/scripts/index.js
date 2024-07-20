@@ -83,7 +83,7 @@ cards.forEach(() => {
 
 function openAndCloseModal() {
     cards[0].addEventListener('click', () => {
-        shadowModal.style.display = 'block';
+        shadowModal.style.display = 'flex';
         modalHtml.style.display = 'flex';
         allContent.style.overflow = 'hidden';
     });
