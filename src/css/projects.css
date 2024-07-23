@@ -1,0 +1,270 @@
+
+.container-modal-projects{
+    background-color: rgba(5, 2, 15, 0.941);
+    height: 120vh;
+    width: 100%;
+    position: absolute;
+    z-index: 998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    bottom: -75rem;
+}
+
+.project-sampling-one{
+    display: flex;
+    width: 100%;
+    z-index: 999;
+    top: 10rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: none;
+    animation: emerge .5s ease-in-out;
+}
+
+.project-sampling-one h2{
+    color: var(--white-color);
+    font-family: 'Ruda', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    margin: 0rem 0rem 5rem 0rem;
+}
+
+.screen-project-one{
+    width: 50rem;
+    margin: 5rem ;
+    animation: float 2s infinite ease-in-out;
+    filter: drop-shadow(0rem 0rem 5rem #ea00ff34);
+}
+
+.choice{
+    display: flex;
+    justify-content: center;
+}
+
+.page{
+    width: 20rem;
+    height: 7rem;
+    background-color: var(--white-color);
+    border-top-left-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+}
+
+.page:hover{
+    background-color: var(--pinkColor-title);
+    box-shadow: 0rem 0rem 1rem var(--pinkColor-title);
+    transition: 0.5s ease-in-out;
+}
+
+.page h3{
+    color: var(--pinkColor-title);
+    font-family: 'Ruda', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.page h3:hover{
+    color: var(--white-color);
+}
+
+.page a{
+    width: 20rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.repo{
+    width: 20rem;
+    height: 7rem;
+    background-color: var(--white-color);
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    border-left: solid 2px #c8c8c8;
+
+}
+
+.repo:hover{
+    background-color: #00b3ff;
+    box-shadow: 0rem 0rem 1rem #00b3ff;
+    transition: 0.5s ease-in-out;
+
+}
+
+.repo h3{
+    color: #00b3ff;
+    font-family: 'Ruda', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.repo h3:hover{
+    color: var(--white-color);
+}
+
+.repo a{
+    width: 20rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-project{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 100rem;
+    bottom: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-project:hover{
+    filter: drop-shadow(0rem 0rem 1rem  var(--pinkColor-title));
+    scale: 1.1;
+    transition: .3s ease-in-out;
+}
+
+.close-project img{
+    width: 4rem;
+}
+
+
+/*---------------------------------------------------Projeto 2---------------------------------------------------*/
+
+
+.project-sampling-two{
+    display: flex;
+    width: 100%;
+    z-index: 999;
+    top: 10rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: none;
+    animation: emerge .5s ease-in-out;
+}
+
+.project-sampling-two h2{
+    color: var(--white-color);
+    font-family: 'Ruda', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    margin: 0rem 0rem 5rem 0rem;
+}
+
+.screen-project-two{
+    width: 50rem;
+    margin: 5rem;
+    animation: float 2s infinite ease-in-out;
+    filter: drop-shadow(0rem 0rem 5rem #ea00ff34);
+}
+
+.choice{
+    display: flex;
+    justify-content: center;
+}
+
+.page{
+    width: 20rem;
+    height: 7rem;
+    background-color: var(--white-color);
+    border-top-left-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+}
+
+.page:hover{
+    background-color: var(--pinkColor-title);
+    box-shadow: 0rem 0rem 1rem var(--pinkColor-title);
+    transition: 0.5s ease-in-out;
+}
+
+.page h3{
+    color: var(--pinkColor-title);
+    font-family: 'Ruda', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.page h3:hover{
+    color: var(--white-color);
+}
+
+.page a{
+    width: 20rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.repo{
+    width: 20rem;
+    height: 7rem;
+    background-color: var(--white-color);
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    border-left: solid 2px #c8c8c8;
+
+}
+
+.repo:hover{
+    background-color: #00b3ff;
+    box-shadow: 0rem 0rem 1rem #00b3ff;
+    transition: 0.5s ease-in-out;
+
+}
+
+.repo h3{
+    color: #00b3ff;
+    font-family: 'Ruda', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.repo h3:hover{
+    color: var(--white-color);
+}
+
+.repo a{
+    width: 20rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-project{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 100rem;
+    bottom: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-project:hover{
+    filter: drop-shadow(0rem 0rem 1rem  var(--pinkColor-title));
+    scale: 1.1;
+    transition: .3s ease-in-out;
+}
+
+.close-project img{
+    width: 4rem;
+}
+

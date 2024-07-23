@@ -2,6 +2,8 @@
     background-color: var(--BlackColor-gradientes);
     overflow: hidden;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 #stars {
@@ -568,15 +570,23 @@
     width: 5rem;
 }
 
-.continer-projects{
+.container-projects{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+.screen:hover{
+    scale: 1.1;
+    transition: 0.3s ease-in-out;
 }
 
 .screen{
     display: flex;
     flex-direction: column;
     width: 50rem;
+    cursor: pointer;
+    margin: 10rem 5rem 5rem 5rem;
 }
 
 .features{

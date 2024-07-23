@@ -53,6 +53,13 @@
         opacity: 0;
     }
 
+    .screen-one {
+        background: linear-gradient(#050007, transparent, #050007), url('../image/background-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
     .union-title {
         margin: 0;
     }
@@ -99,6 +106,7 @@
     .screen-two {
         width: 100%;
         height: 100%;
+        align-items: center;
     }
 
     .top-elements {
@@ -119,7 +127,7 @@
     }
 
 
-    .continer-projects {
+    .container-projects {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
@@ -191,6 +199,133 @@
     }
 }
 
+/*------------------------------------------sampling projects-------------------------------------------------*/
+
+@media(max-width: 720px) {
+    .screen-two .container-modal-projects {
+        background-color: rgba(5, 2, 15, 0.941);
+        height: 120vh;
+        width: 100%;
+        position: absolute;
+        z-index: 998;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        bottom: -80rem;
+    }
+
+    /* --------------------------------projeto 1 -------------------------------------*/
+
+    .screen-two .project-sampling-one{
+        top: 20rem
+    }
+
+    .screen-two .project-sampling-one h2 {
+        font-size: 2rem;
+        margin: 0rem 2rem 5rem 2rem
+    }
+
+    .project-sampling-one .screen-project-one {
+        width: 28rem;
+        margin: 5rem;
+        animation: float 2s infinite ease-in-out;
+        filter: drop-shadow(0rem 0rem 5rem #ea00ff34);
+    }
+
+    .choice .page{
+        width: 14rem;
+    }
+
+    .choice .page a{
+        width: 14rem;
+    }
+
+    .choice .repo{
+        width: 14rem;
+    }
+    .choice .repo a{
+        width: 14rem;
+    }
+
+    .choice .repo h3{
+        font-size: 1.8rem;
+    }
+
+    .project-sampling-one .close-project{
+        left: 32rem;
+        bottom: 27rem;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .project-sampling-one .close-project img{
+        width: 3rem;
+    }
+
+    /*---------------------------------Projeto 2-----------------------------------*/
+
+    .screen-two .container-modal-projects {
+        background-color: rgba(5, 2, 15, 0.941);
+        height: 200vh;
+        width: 100%;
+        position: absolute;
+        z-index: 998;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        bottom: -125rem;
+    }
+
+
+    .screen-two .project-sampling-two{
+        top: 50rem
+    }
+
+    .screen-two .project-sampling-two h2 {
+        font-size: 2rem;
+        margin: 0rem 2rem 5rem 2rem
+    }
+
+    .project-sampling-two .screen-project-two {
+        width: 28rem;
+        margin: 5rem;
+        animation: float 2s infinite ease-in-out;
+        filter: drop-shadow(0rem 0rem 5rem #ea00ff34);
+    }
+
+    .choice .page{
+        width: 14rem;
+    }
+
+    .choice .page a{
+        width: 14rem;
+    }
+
+    .choice .repo{
+        width: 14rem;
+    }
+    .choice .repo a{
+        width: 14rem;
+    }
+
+    .choice .repo h3{
+        font-size: 1.8rem;
+    }
+
+    .project-sampling-two .close-project{
+        left: 32rem;
+        bottom: 27rem;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .project-sampling-two .close-project img{
+        width: 3rem;
+    }
+}
+
 /*-----------------------------------------cards features------------------------------------------------------*/
 
 @media(max-width: 720px) {
@@ -205,7 +340,7 @@
 
     /*------close modal cards---------*/
 
-    .magic-cards .close-modal{
+    .magic-cards .close-modal {
         left: 25rem;
         width: 6rem;
         height: 6rem;
@@ -217,14 +352,15 @@
         width: 30rem;
     }
 
-    .magic-cards .modal-html .container-structs{
+    .magic-cards .modal-html .container-structs {
         width: 25rem;
         height: 24rem;
     }
 
-    .magic-cards .container-structs .instructions{
+    .magic-cards .container-structs .instructions {
         font-size: 1.8rem;
     }
+
     /*-----modal de perfil-------*/
 
     .magic-cards .modal-card {
@@ -291,7 +427,7 @@
         width: 30rem;
     }
 
-    .magic-cards .modal-css .container-structs{
+    .magic-cards .modal-css .container-structs {
         width: 25rem;
         height: 24rem;
     }
@@ -302,7 +438,7 @@
         width: 30rem;
     }
 
-    .magic-cards .modal-js .container-structs{
+    .magic-cards .modal-js .container-structs {
         width: 25rem;
         height: 24rem;
     }
@@ -313,7 +449,7 @@
         width: 30rem;
     }
 
-    .magic-cards .modal-git .container-structs{
+    .magic-cards .modal-git .container-structs {
         width: 25rem;
         height: 24rem;
     }
@@ -324,7 +460,7 @@
         width: 30rem;
     }
 
-    .magic-cards .modal-design .container-structs{
+    .magic-cards .modal-design .container-structs {
         width: 25rem;
         height: 24rem;
     }

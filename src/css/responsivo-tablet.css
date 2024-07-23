@@ -81,7 +81,7 @@
     }
 
 
-    .continer-projects {
+    .container-projects {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
@@ -120,6 +120,133 @@
     }
 }
 
+/*------------------------------------------sampling projects-------------------------------------------------*/
+
+@media(min-width: 720px) and (max-width: 1000px) {
+    .screen-two .container-modal-projects {
+        background-color: rgba(5, 2, 15, 0.941);
+        height: 120vh;
+        width: 100%;
+        position: absolute;
+        z-index: 998;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        bottom: -80rem;
+    }
+
+    /* --------------------------------projeto 1 -------------------------------------*/
+
+    .screen-two .project-sampling-one{
+        top: 20rem
+    }
+
+    .screen-two .project-sampling-one h2 {
+        font-size: 3rem;
+        margin: 0rem 3rem 5rem 3rem
+    }
+
+    .project-sampling-one .screen-project-one {
+        width: 50rem;
+        margin: 5rem;
+        animation: float 2s infinite ease-in-out;
+        filter: drop-shadow(0rem 0rem 5rem #ea00ff34);
+    }
+
+    .project-sampling-one .choice .page{
+        width: 20rem;
+    }
+
+    .project-sampling-one .choice .page a{
+        width: 20rem;
+    }
+
+    .project-sampling-one .choice .repo{
+        width: 20rem;
+    }
+    .project-sampling-one .choice .repo a{
+        width: 20rem;
+    }
+
+    .project-sampling-one .choice .repo h3{
+        font-size: 2.5rem;
+    }
+
+    .project-sampling-one .close-project{
+        left: 65rem;
+        bottom: 35rem;
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .project-sampling-one .close-project img{
+        width: 4rem;
+    }
+
+    /*---------------------------------Projeto 2-----------------------------------*/
+
+    .screen-two .container-modal-projects {
+        background-color: rgba(5, 2, 15, 0.941);
+        height: 200vh;
+        width: 100%;
+        position: absolute;
+        z-index: 998;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        bottom: -125rem;
+    }
+
+
+    .screen-two .project-sampling-two{
+        top: 50rem
+    }
+
+    .screen-two .project-sampling-two h2 {
+        font-size: 3rem;
+        margin: 0rem 3rem 5rem 3rem
+    }
+
+    .project-sampling-two .screen-project-two {
+        width: 50rem;
+        margin: 5rem;
+        animation: float 2s infinite ease-in-out;
+        filter: drop-shadow(0rem 0rem 5rem #ea00ff34);
+    }
+
+    .project-sampling-two .choice .page{
+        width: 20rem;
+    }
+
+    .project-sampling-two .choice .page a{
+        width: 20rem;
+    }
+
+    .project-sampling-two .choice .repo{
+        width: 20rem;
+    }
+    .project-sampling-two .choice .repo a{
+        width: 20rem;
+    }
+
+    .choice .repo h3{
+        font-size: 2.5rem;
+    }
+
+    .project-sampling-two .close-project{
+        left: 65rem;
+        bottom: 35rem;
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .project-sampling-two .close-project img{
+        width: 4rem;
+    }
+}
+
 /*-----------------------------------------cards features------------------------------------------------------*/
 
 @media(min-width: 720px) and (max-width:1000px) {
@@ -144,7 +271,7 @@
 
     .magic-cards .modal-html {
         width: 35rem;
-        bottom: -75rem;
+        bottom: -125rem;
     }
 
     .magic-cards .modal-html .container-structs {
@@ -159,7 +286,7 @@
     /*-----modal de perfil-------*/
 
     .magic-cards .modal-card {
-        bottom: -75rem;
+        bottom: -125rem;
     }
 
     .modal-card .close-profile {
@@ -173,7 +300,7 @@
 
     .magic-cards .modal-css {
         width: 35rem;
-        bottom: -75rem;
+        bottom: -125rem;
     }
 
     .magic-cards .modal-css .container-structs {
@@ -185,7 +312,7 @@
 
     .magic-cards .modal-js {
         width: 35rem;
-        bottom: -75rem;
+        bottom: -125rem;
     }
 
     .magic-cards .modal-js .container-structs {
@@ -197,7 +324,7 @@
 
     .magic-cards .modal-git {
         width: 35rem;
-        bottom: -75rem;
+        bottom: -125rem;
     }
 
     .magic-cards .modal-git .container-structs {
@@ -209,7 +336,7 @@
 
     .magic-cards .modal-design {
         width: 35rem;
-        bottom: -75rem;
+        bottom: -125rem;
     }
 
     .magic-cards .modal-design .container-structs {

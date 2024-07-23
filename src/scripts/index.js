@@ -63,6 +63,7 @@ const closeModalCards = document.querySelectorAll('.close-modal')
 
 
 closeModalCards.forEach((closer) => {
+    
     closer.addEventListener('click', ()=>{
         allContent.style.overflow = 'visible';
         shadowModal.style.display = 'none';
@@ -119,3 +120,41 @@ function openAndCloseModal() {
     });
 }
 
+
+/*----------------------------funcionamento do modal dos proejtos---------------------------*/
+
+const screenProject = document.querySelectorAll('.screen')
+const containerModalProjects = document.querySelector('.container-modal-projects')
+const projectsSamplingOne = document.querySelector('.project-sampling-one')
+const projectsSamplingTwo = document.querySelector('.project-sampling-two')
+const closeModalProjects = document.querySelectorAll('.close-project')
+
+screenProject.forEach(() => {
+    samplingProject()
+});
+
+console.log(screenProject);
+
+function samplingProject(){
+    screenProject[0].addEventListener('click', () => {
+        allContent.style.overflow = 'hidden';
+        containerModalProjects.style.display = 'flex'
+        projectsSamplingOne.style.display = 'flex';
+    })
+
+    screenProject[1].addEventListener('click', () => {
+        allContent.style.overflow = 'hidden';
+        containerModalProjects.style.display = 'flex'
+        projectsSamplingTwo.style.display = 'flex';
+    })
+}
+
+
+closeModalProjects.forEach((closeProject)=>{
+    closeProject.addEventListener('click', ()=>{
+        allContent.style.overflow = 'visible';
+        containerModalProjects.style.display = 'none'
+        projectsSamplingOne.style.display = 'none';
+        projectsSamplingTwo.style.display = 'none';
+    })
+})
