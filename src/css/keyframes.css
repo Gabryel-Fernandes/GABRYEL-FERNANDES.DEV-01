@@ -5,7 +5,7 @@
 }
 
 @keyframes infiniteScroll {
-    to {-webkit-translate: calc(-50% - 5px);}
+    to {translate: calc(-50% - 5px);}
 }
 
 @keyframes downarrow{
