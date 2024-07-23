@@ -1,17 +1,11 @@
 @keyframes animStar {
-    from {
-        transform: translateY(px);
-    }
+    from {-webkit-transform: translateY(px);}
 
-    to {
-        transform: translateY(-2000px);
-    }
+    to {-webkit-transform: translateY(-2000px);}
 }
 
 @keyframes infiniteScroll {
-    to {
-        translate: calc(-50% - 5px);
-    }
+    to {-webkit-translate: calc(-50% - 5px);}
 }
 
 @keyframes downarrow{
@@ -25,6 +19,6 @@
 }
 
 @keyframes float{
-    0%, 100% {transform: translateY(0);}
-    50% {transform: translateY(-20px);}
+    0%, 100% {-webkit-transform: translateY(0);}
+    50% {-webkit-transform: translateY(-20px);}
 }

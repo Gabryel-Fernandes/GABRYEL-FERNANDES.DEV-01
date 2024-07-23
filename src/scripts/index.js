@@ -1,160 +1,139 @@
-/*----------funcionamento dp scroll lateral do projects----------*/
-let elementsbar = document.querySelector('.slider-bar');
-let elementSlider = elementsbar.querySelector('.slider-itens');
-let elementsdaughters = Array.from(elementSlider.children);
+document.addEventListener('DOMContentLoaded', () => {
+    setupProjectSlider();
+    setupArrowButton();
+    setupHamburguerNav();
+    setupCards();
+    setupProjectModals();
+});
 
-elementsdaughters.forEach((item) => {
-    let duplicateElement = item.cloneNode(true);
+/*---------- Funcionalidade do slider de projetos ----------*/
+function setupProjectSlider() {
+    const elementsBar = document.querySelector('.slider-bar');
+    const elementSlider = elementsBar.querySelector('.slider-itens');
+    const elementsDaughters = Array.from(elementSlider.children);
 
-    elementSlider.appendChild(duplicateElement);
-})
-
-/*----------funcionamento da flecha button-----------*/
-
-let excuteButton = document.querySelector('.contact');
-let moveArrow = document.querySelector('.arrow');
-
-excuteButton.addEventListener('mouseenter', () => {
-    moveArrow.classList.add('active-arrow')
-})
-
-excuteButton.addEventListener('mouseout', () => {
-    moveArrow.classList.remove('active-arrow')
-})
-
-/*----------Funcionamento deo bottão da nav-----------*/
-
-const buttonHamburguerNav = document.querySelector('.hamburguer');
-const navigationbar = document.querySelector('.navigation')
-const iconsSocials = document.querySelector('.social-links')
-const iconsSections = document.querySelector('.sections')
-
-buttonHamburguerNav.addEventListener('click', () => {
-    activeIconsNav();
-    removeOpacity();
-})
-
-function activeIconsNav() {
-    navigationbar.classList.toggle('active-nav');
-    buttonHamburguerNav.classList.toggle('background-hamburguer-active');
+    elementsDaughters.forEach(item => {
+        const duplicateElement = item.cloneNode(true);
+        elementSlider.appendChild(duplicateElement);
+    });
 }
 
-function removeOpacity() {
-    iconsSocials.style.opacity = '100%';
-    iconsSections.style.opacity = '100%';
+/*---------- Funcionalidade do botão de contato -----------*/
+function setupArrowButton() {
+    const executeButton = document.querySelector('.contact');
+    const moveArrow = document.querySelector('.arrow');
 
+    executeButton.addEventListener('mouseenter', () => {
+        moveArrow.classList.add('active-arrow');
+    });
+
+    executeButton.addEventListener('mouseleave', () => {
+        moveArrow.classList.remove('active-arrow');
+    });
 }
 
-/*-----------funcionamento das cartas-------------*/
+/*---------- Funcionalidade do botão do menu hambúrguer -----------*/
+function setupHamburguerNav() {
+    const buttonHamburguerNav = document.querySelector('.hamburguer');
+    const navigationbar = document.querySelector('.navigation');
+    const iconsSocials = document.querySelector('.social-links');
+    const iconsSections = document.querySelector('.sections');
 
+    buttonHamburguerNav.addEventListener('click', () => {
+        toggleIconsNav();
+        removeOpacity(iconsSocials, iconsSections);
+    });
 
-const cards = document.querySelectorAll('.magic-card')
-const shadowModal = document.querySelector('.container-modal')
-const allContent = document.querySelector('.all-content')
+    function toggleIconsNav() {
+        navigationbar.classList.toggle('active-nav');
+        buttonHamburguerNav.classList.toggle('background-hamburguer-active');
+    }
 
-const modalHtml = document.querySelector('.modal-html')
-const modalCard = document.querySelector('.modal-card')
-const modalCss = document.querySelector('.modal-css')
-const modalJs = document.querySelector('.modal-js')
-const modalGit = document.querySelector('.modal-git')
-const modalDesign = document.querySelector('.modal-design')
+    function removeOpacity(...elements) {
+        elements.forEach(element => {
+            element.style.opacity = '100%';
+        });
+    }
+}
 
-const closeModalCards = document.querySelectorAll('.close-modal')
+/*----------- Funcionalidade das cartas -------------*/
+function setupCards() {
+    const cards = document.querySelectorAll('.magic-card');
+    const shadowModal = document.querySelector('.container-modal');
+    const allContent = document.querySelector('.all-content');
+    const modals = {
+        html: document.querySelector('.modal-html'),
+        card: document.querySelector('.modal-card'),
+        css: document.querySelector('.modal-css'),
+        js: document.querySelector('.modal-js'),
+        git: document.querySelector('.modal-git'),
+        design: document.querySelector('.modal-design')
+    };
 
+    const closeModalCards = document.querySelectorAll('.close-modal');
 
-closeModalCards.forEach((closer) => {
-    
-    closer.addEventListener('click', ()=>{
+    closeModalCards.forEach(closer => {
+        closer.addEventListener('click', closeAllModals);
+    });
+
+    cards.forEach((card, index) => {
+        card.addEventListener('click', () => {
+            openModal(index);
+        });
+    });
+
+    function closeAllModals() {
         allContent.style.overflow = 'visible';
         shadowModal.style.display = 'none';
-        modalHtml.style.display = 'none';
-        modalCard.style.display = 'none';
-        modalCss.style.display = 'none';
-        modalJs.style.display = 'none';
-        modalGit.style.display = 'none';
-        modalDesign.style.display = 'none';
-    })
-})
+        Object.values(modals).forEach(modal => {
+            modal.style.display = 'none';
+        });
+    }
 
-
-cards.forEach(() => {
-    openAndCloseModal();
-});
-
-
-function openAndCloseModal() {
-    cards[0].addEventListener('click', () => {
-        shadowModal.style.display = 'flex';
-        modalHtml.style.display = 'flex';
-        allContent.style.overflow = 'hidden';
-    });
-
-    cards[1].addEventListener('click', () => {
-        shadowModal.style.display = 'block';
-        modalCard.style.display = 'flex';
-        allContent.style.overflow = 'hidden';
-    });
-
-    cards[2].addEventListener('click', () => {
-        shadowModal.style.display = 'block';
-        modalCss.style.display = 'flex';
-        allContent.style.overflow = 'hidden';
-    });
-
-    cards[3].addEventListener('click', () => {
-        shadowModal.style.display = 'block';
-        modalJs.style.display = 'flex';
-        allContent.style.overflow = 'hidden';
-    });
-
-    cards[4].addEventListener('click', () => {
-        shadowModal.style.display = 'block';
-        modalGit.style.display = 'flex';
-        allContent.style.overflow = 'hidden';
-    });
-
-    cards[5].addEventListener('click', () => {
-        shadowModal.style.display = 'block';
-        modalDesign.style.display = 'flex';
-        allContent.style.overflow = 'hidden';
-    });
+    function openModal(index) {
+        const modalKeys = Object.keys(modals);
+        if (index < modalKeys.length) {
+            shadowModal.style.display = 'flex';
+            modals[modalKeys[index]].style.display = 'flex';
+            allContent.style.overflow = 'hidden';
+        }
+    }
 }
 
+/*-------------------- Funcionalidade do modal dos projetos --------------------*/
+function setupProjectModals() {
+    const screenProjects = document.querySelectorAll('.screen');
+    const containerModalProjects = document.querySelector('.container-modal-projects');
+    const projectSamples = [
+        document.querySelector('.project-sampling-one'),
+        document.querySelector('.project-sampling-two')
+    ];
+    const closeModalProjects = document.querySelectorAll('.close-project');
+    const allContent = document.querySelector('.all-content');
 
-/*----------------------------funcionamento do modal dos proejtos---------------------------*/
+    screenProjects.forEach((project, index) => {
+        project.addEventListener('click', () => {
+            openProjectModal(index);
+        });
+    });
 
-const screenProject = document.querySelectorAll('.screen')
-const containerModalProjects = document.querySelector('.container-modal-projects')
-const projectsSamplingOne = document.querySelector('.project-sampling-one')
-const projectsSamplingTwo = document.querySelector('.project-sampling-two')
-const closeModalProjects = document.querySelectorAll('.close-project')
+    closeModalProjects.forEach(closeProject => {
+        closeProject.addEventListener('click', closeProjectModals);
+    });
 
-screenProject.forEach(() => {
-    samplingProject()
-});
+    function openProjectModal(index) {
+        if (index < projectSamples.length) {
+            allContent.style.overflow = 'hidden';
+            containerModalProjects.style.display = 'flex';
+            projectSamples[index].style.display = 'flex';
+        }
+    }
 
-console.log(screenProject);
-
-function samplingProject(){
-    screenProject[0].addEventListener('click', () => {
-        allContent.style.overflow = 'hidden';
-        containerModalProjects.style.display = 'flex'
-        projectsSamplingOne.style.display = 'flex';
-    })
-
-    screenProject[1].addEventListener('click', () => {
-        allContent.style.overflow = 'hidden';
-        containerModalProjects.style.display = 'flex'
-        projectsSamplingTwo.style.display = 'flex';
-    })
-}
-
-
-closeModalProjects.forEach((closeProject)=>{
-    closeProject.addEventListener('click', ()=>{
+    function closeProjectModals() {
         allContent.style.overflow = 'visible';
-        containerModalProjects.style.display = 'none'
-        projectsSamplingOne.style.display = 'none';
-        projectsSamplingTwo.style.display = 'none';
-    })
-})
+        containerModalProjects.style.display = 'none';
+        projectSamples.forEach(sample => {
+            sample.style.display = 'none';
+        });
+    }
+}
