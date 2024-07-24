@@ -6,6 +6,22 @@ document.addEventListener('DOMContentLoaded', () => {
     setupProjectModals();
 });
 
+/*--------------------funcionalidade do CV-------------------*/
+
+document.getElementById('cv-download').addEventListener('click', function() {
+    // URL do arquivo do CV
+    const url = './src/documents/cv-gabryelFernandes.pdf';
+    
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'cv-gabryelFernandes.pdf'
+
+    document.body.appendChild(link);
+    link.click();
+    
+    document.body.removeChild(link);
+})
+
 /*---------- Funcionalidade do slider de projetos ----------*/
 function setupProjectSlider() {
     const elementsBar = document.querySelector('.slider-bar');
