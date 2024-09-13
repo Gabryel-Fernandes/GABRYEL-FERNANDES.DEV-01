@@ -337,7 +337,7 @@
     /*------container general------*/
 
     .magic-cards .container-modal {
-        height: 110vh;
+        height: 150vh;
         position: absolute;
         bottom: -202rem;
     }
