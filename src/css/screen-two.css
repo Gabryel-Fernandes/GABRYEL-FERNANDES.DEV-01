@@ -1,7 +1,7 @@
 .screen-two{
     background-color: var(--BlackColor-gradientes);
     overflow: hidden;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
 }
