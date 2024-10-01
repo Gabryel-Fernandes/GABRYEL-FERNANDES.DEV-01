@@ -1,5 +1,5 @@
 .screen-three{
-    height: 120vh;
+    height: 100vh;
     background:  linear-gradient(#050007, transparent, #050007), url('../image/background-min.svg');
     background-repeat: no-repeat;
     background-size: cover;
